@@ -140,18 +140,32 @@ body{
 
 .houses-section{
   display:flex;
+  /*height:100vh;*/
   flex-wrap:wrap;
+  position:relative;
+  margin-top:5rem;
   /*border:2px solid red;*/
 
 }
 
-.houses-section h2{
+.houses-section-header{
+  /*border:2px solid green;*/
+  height:10rem;
+  width:100%;
   display:flex;
   justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-very-light-blue);
+}
+.houses-section-header h2{
+  text-transform: capitalize;
+  font-family: var(--secondary-font-family);
+  font-size: 5rem;  
 }
 
+
 .houses-card{
-  height:55rem;
+  height:57rem;
   justify-content: center;
   width:35rem;
   position:relative;
@@ -189,12 +203,16 @@ body{
 .house-card-item-text{
   height:15rem;
   text-transform: capitalize;
+  font-family: var(--primary-font-family);
+  font-weight: 200;
   /*border:2px solid red;*/
 }
 .house-card-item-text .paragraph{
   /*border:2px solid red;*/
   height:9rem;
   text-align: center;
+  text-align: center;
+
 }
 .house-card-item-header{
   display:flex;
@@ -243,5 +261,196 @@ h4::first-letter{
   text-transform:capitalize;
   font-size: 6rem;
 }
+
+.amenities-section{
+  /*border:2px solid red;*/
+  margin-top: 6rem;
+  position:relative;
+  max-height:100vh;
+  background-color: var(--secondary-background-blue);
+}
+
+.amenities-section-header{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  /*border:2px solid red;*/
+  height:10rem;
+  background-color: var(--secondary-very-light-blue);
+}
+.amenities-section-header h1{
+  text-transform: capitalize;
+  font-family: var(--secondary-font-family);
+  font-size: 5rem;
+}
+
+.amenities-list{
+  /*border:2px solid green;*/
+  max-height: 80vh;
+  margin-left: 8rem;
+  font-family: var(--primary-font-family);
+  font-size: 3rem;
+  font-weight: 250;
+  margin-top: 4rem;
+}
+
+.amenities-list li{
+  margin-bottom: 2rem;
+}
+
+.realtors-section{
+  margin:10rem 0;
+  background-color: var(--primary-background-blue);
+}
+
+.realtors-section-header{
+  display:flex;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  height:10rem;
+  background-color: var(--secondary-very-light-blue);
+}
+
+.realtors-section-header h1{
+  text-transform: capitalize;
+  font-family: var(--secondary-font-family);
+  font-size: 5rem;
+}
+
+.realtors-card{
+  height:50rem;
+  display:flex;
+  /*border:2px solid green;*/
+  margin-top: 5rem;
+  position:relative;
+  background-color: var(--primary-background-blue);
+}
+
+.realtors-card-item{
+  /*border:2px solid red;*/
+  width:55rem;
+  margin:3rem;
+  position: relative;
+}
+
+.realtors-card-wrapper{
+  width:100%;
+  height:28rem;
+  /*border:2px solid blue;*/
+  position:relative;
+}
+.realtors-card-wrapper img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  border-radius: .8rem;
+}
+
+.realtors-card-text{
+  width:100%;
+  /*border:2px solid orange;*/
+  margin-top:2rem;
+  height:13rem;;
+}
+
+.realtors-card-text-header{
+  width:100%;
+  /*border:2px solid black;*/
+  height:4rem;
+  border-radius: 50rem;
+  background-color: var(--secondary-another-bluish-color);
+  text-align: center;
+  text-transform: capitalize;
+  font-family: var(--secondary1-font-family);
+  position: relative;
+}
+
+.realtors-card-text p{
+  text-align: center;
+  margin-top:1rem;
+  font-family: var(--primary-font-family);
+  font-size: 1.5rem;
+  font-weight: 250;
+}
+
+.form-section{
+  width:100%;
+  background-color: var(--secondary-background-blue)
+  /*border: 2px solid red;*/
+}
+.form-section .form-header{
+  /*border: 2px solid black;*/
+  height:8rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-very-light-blue);
+}
+
+.form-section .form-header h2{
+  font-family: var(--secondary-font-family);
+  font-size: 5rem;
+  text-transform: capitalize;
+}
+
+.input-form{
+  height:80vh;
+  margin-top: 4rem;
+  /*border:2px solid blue;*/
+  max-width:70rem;
+  margin-left: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap:.5rem;
+  position:relative;
+  background-color:var(--secondary-another-bluish-color);
+  border-radius: 10rem;
+}
+
+.input-form label{
+  font-family: var(--primary-font-family);
+  display: flex;
+  justify-content: center;
+}
+
+.form1{
+  margin-top:2rem;
+}
+
+.input-form input{
+  margin-left:14rem;
+  width:45rem;
+  height:4rem;
+  border-radius: .8rem;
+  text-align: start;
+  font-size: 1.5rem;
+  border:none;
+}
+
+.input-form textarea{
+  width:45rem;
+  margin-left:14rem;
+  border-radius: .8rem;
+  margin: .5rem 0 1rem 14rem;
+  font-size: 1.5rem;
+  border:none;
+}
+
+.input-form button{
+  width:15rem;
+  height:6rem;
+  margin-left: 40%;
+  margin-top: 2rem;
+  margin-bottom:2rem;
+  border-radius: .6rem;
+  background-color: var(--secondary-very-light-blue);
+  border:none;
+}
+
+
 
 
