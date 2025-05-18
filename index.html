@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="./src/style.css">
   <link rel="icon" href="./Images/logo-white.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -261,7 +264,7 @@
       <h2>reach out to us</h2>
     </div>
     <span class="details-form">
-      <form action="submit" class="input-form">
+      <form action="submit" class="input-form" id="form">
 
         <label for="fname" class="form1">Enter your first name:</label>
         <input type="text" id="fname" placeholder="e.g annpatrice" required>
@@ -274,14 +277,75 @@
         <input type="text" placeholder="e.g. example@gmail.com" id="mail" required>
 
         <label for="txt">Enter your preferred message: </label>
-        <textarea name="text" id="txt" rows="10" cols="40"></textarea>
+        <textarea name="text" id="txt" rows="10" cols="40" placeholder="Send us a message"></textarea>
 
         <button>Send</button>
-
       </form>
+  </section>
+
+  <section class="footer-section">
+    <div class="footer-container">
+      <div class="footer-text">
+        <h1>home is a feeling.<br> find yours!</h1>
+      </div>
+
+      <div class="footer-contacts">
+        <div class="contacts-list">
+          <div class="footer-contacts-sections">
+            <h3> <i class="fa-brands fa-wpforms"></i>email</h3>
+          </div>
+          <div class="footer-contacts-sections">
+            <h2 id="form">urhaven@apartments.com</h2>
+          </div>
+        </div>
+        <div class="contacts-list">
+          <div class="footer-contacts-sections">
+            <p><i class="fa-solid fa-phone"></i>call us</p>
+          </div>
+          <div class="footer-contacts-sections">
+            <p>+254718764327</p>
+          </div>
+        </div>
+        <div class="contacts-list">
+          <div class="footer-contacts-sections">
+            <h3><i class="fa-solid fa-location-dot"></i>Address</h3>
+          </div>
+          <div class="footer-contacts-sections">
+            <h2>murang'a county,kiharu</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-details">
+        <div class="newsletter">
+          <div class="newsletter1">
+            <h2>newsletter</h2>
+          </div>
+          <div class="newsletter1">
+            <input type="text" placeholder="email address">
+            <button>subscribe</button>
+          </div>
+        </div>
+        <div class="socials">
+          <div class="socials1">
+            <h2>follow us</h2>
+          </div>
+          <div class="socials1">
+            <div class="socials1-icons">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p><sup><i class="fa-regular fa-copyright"></i></sup>made by T with alot of patience!!!</p>
+    </div>
   </section>
   </span>
 </body>
-
 
 </html>
